@@ -1,2 +1,2 @@
 # Brazilian-E-Commerce-Project
-A group project where I was tasked with translating over 30,000 customer reviews from Portuguese to English in order to perform sentiment analysis. Insights were given in a presentation to stakeholders.
+A group project on the Olist Brazilian E-Commerce dataset. I was responsible for the translation and visualisation of over 30,000 customer reviews. Insights were delivered in a client facing presentation.
