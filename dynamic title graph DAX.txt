@@ -1,0 +1,19 @@
+Dynamic Title =
+VAR Selected =
+    CONCATENATEX(
+        VALUES('finaltranslatedcleanedreviews'[review_score]),
+        'finaltranslatedcleanedreviews'[review_score],
+        " & "
+    )
+
+
+VAR ItemCount = DISTINCTCOUNT('finaltranslatedcleanedreviews'[review_score])
+VAR TotalCount = CALCULATE(DISTINCTCOUNT('finaltranslatedcleanedreviews'[review_score]), ALL('finaltranslatedcleanedreviews'[review_score]))
+
+
+RETURN
+    IF(
+        ItemCount < TotalCount,
+        Selected & " Star Rating Reviews",
+        "Popular Words in Reviews"
+    )
